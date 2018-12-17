@@ -1,4 +1,4 @@
-# IONIC integration with deep link website urls 
+# IONIC - Deeplinking with website urls in mobile app
 
 Deeplinks handles registering and displaying specific views based on URLs from website to inside the app navigation. For example, product purchase from website to open in app. If the app is not installed, it will navigate the user to open the app to download
 
@@ -13,13 +13,13 @@ $ ionic cordova plugin add ionic-plugin-deeplinks --variable URL_SCHEME=deeplink
 $ npm install --save @ionic-native/deeplinks
 ```
 
-# Create navigation links to app pages 
+### Create navigation links to app pages 
 
 ```bash
 $ ionic generate page aboutus --no-module // it creates AboutusPage in your pages folder
 ```
 
-# Copy the below code to your app.component.ts
+### Copy the below code to your app.component.ts
 
 ```
      constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public deeplink: Deeplinks) {
